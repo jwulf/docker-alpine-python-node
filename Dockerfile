@@ -7,5 +7,6 @@ RUN apk add --update --no-cache python \
     python-dev \
     py-pip \
     yarn \
+    git \
  && rm -rf /var/cache/apk/* \
  && pip install awscli 
