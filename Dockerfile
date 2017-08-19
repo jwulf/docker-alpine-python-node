@@ -8,6 +8,6 @@ RUN apk add --update --no-cache python \
     py-pip \
     yarn \
     git \
-    ssh \
+    openssh-client \
  && rm -rf /var/cache/apk/* \
  && pip install awscli 
