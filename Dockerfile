@@ -6,5 +6,6 @@ FROM mhart/alpine-node
 RUN apk add --update --no-cache python \
     python-dev \
     py-pip \
+    yarn \
  && rm -rf /var/cache/apk/* \
  && pip install awscli 
