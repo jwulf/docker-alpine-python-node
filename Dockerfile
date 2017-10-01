@@ -13,4 +13,5 @@ RUN apk add --update --no-cache python \
     nano \
     openssh-client \
  && rm -rf /var/cache/apk/* \
+ && yarn config set "strict-ssl" false \
  && pip install awscli
