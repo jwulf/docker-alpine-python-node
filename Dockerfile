@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:8.5
+FROM mhart/alpine-node:12.4.0
 
 # If you have native dependencies, add these extra tools
 # RUN apk add --no-cache make gcc g++ python
