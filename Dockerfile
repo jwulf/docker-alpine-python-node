@@ -5,6 +5,7 @@ FROM mhart/alpine-node:12.4.0
 
 ENV TERM=xterm
 
+COPY kubefwd /
 RUN apk add --update --no-cache python \
     python-dev \
     py-pip \
@@ -12,6 +13,8 @@ RUN apk add --update --no-cache python \
     git \
     nano \
     openssh-client \
+    curl \
  && rm -rf /var/cache/apk/* \
  && yarn config set "strict-ssl" false \
- && pip install awscli
+ && pip install awscli \
+ && npm install -g pino-pretty
