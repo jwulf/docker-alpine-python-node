@@ -15,7 +15,7 @@ RUN apk add --update --no-cache python \
     openssh-client \
     curl \
     build-base gcc abuild binutils binutils-doc gcc-doc \
-    cmake cmake-doc extra-cmake-modules extra-cmake-modules-doc
+    cmake cmake-doc extra-cmake-modules extra-cmake-modules-doc \
  && rm -rf /var/cache/apk/* \
  && yarn config set "strict-ssl" false \
  && pip install awscli \
